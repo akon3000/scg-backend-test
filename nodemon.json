@@ -1,6 +1,5 @@
 {
   "watch": [
-    "/scg-location/**/*.js",
-    "/line-message/**/*.js"
+    "/src/**/*.js"
   ]
 }

@@ -6,10 +6,7 @@
   "author": "ToNoey <vonmane001@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start:scg-location": "node ./scg-location",
-    "dev:scg-location": "nodemon ./scg-location",
-    "start:line-message": "node ./line-message",
-    "dev:line-message": "nodemon ./line-message"
+    "dev": "nodemon ./src"
   },
   "dependencies": {
     "express": "^4.17.1"
