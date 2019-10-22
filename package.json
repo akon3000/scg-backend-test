@@ -5,6 +5,12 @@
   "repository": "git@github.com:akon3000/scg-backend-test.git",
   "author": "ToNoey <vonmane001@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start:scg-location": "node ./scg-location",
+    "dev:scg-location": "nodemon ./scg-location",
+    "start:line-message": "node ./line-message",
+    "dev:line-message": "nodemon ./line-message"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
