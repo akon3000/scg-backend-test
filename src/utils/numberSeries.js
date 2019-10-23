@@ -82,8 +82,7 @@ function numberSeries (numbers) {
   const step = findStep(numbersEquation)
   const result = findFibonacci(numbers, step)
   
-
-  console.log(result)
+  return result
 }
 
 module.exports = numberSeries
