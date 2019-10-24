@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
-  res.send(`Hi there! This is a nodejs-line-message running on PORT: ${PORT}`)
+  res.send(`Hi there! This is a nodejs-line-message running on PORT: ${PORT} `)
 })
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`))
