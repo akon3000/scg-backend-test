@@ -20,7 +20,7 @@ app.get('/number-series', cache(10), (req, res) => {
   }
 })
 
-app.get('/scg-location', cache(10), async (req, res) => {
+app.get('/bangsue-restaurants-location', cache(10), async (req, res) => {
   const { search = 'restaurants in Bangsue' } = req.query
   try {
     const response = await axios.get(encodeURI(`${API_SEARCH}?query=${search}&key=${API_KEY}`))
