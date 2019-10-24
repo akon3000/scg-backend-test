@@ -20,10 +20,13 @@ app.get('/number-series', cache(10), (req, res) => {
   }
 })
 
-app.get('/bangsue-restaurants-location', cache(10), async (req, res) => {
-  const { search = 'restaurants in Bangsue' } = req.query
+app.get('/bangsue-restaurants', async (req, res) => {
+  const lat = '13.8098348'
+  const lng = '100.5212796'
+  const { radius = '1500' } = req.query
+
   try {
-    const response = await axios.get(encodeURI(`${API_SEARCH}?query=${search}&key=${API_KEY}`))
+    const response = await axios.get(encodeURI(`${API_SEARCH}?location=${lat},${lng}&radius=${radius}&type=restaurant&key=${API_KEY}`))
     return res.send(response.data)
   } catch (err) {
     return res.status(500).send(`Error: some thing went worng`)
