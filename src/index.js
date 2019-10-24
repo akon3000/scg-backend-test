@@ -20,7 +20,16 @@ app.get('/number-series', cache(10), (req, res) => {
   }
 })
 
-app.get('/bangsue-restaurants', async (req, res) => {
+/**
+ * @Cache 10 minute
+ * -------------------------------------------------
+ * @Note
+ *  - some time google response OVER_QUERY_LIMIT
+ *    if you see error like this, try to refres
+ *    or change API_KEY in .env to your API KEY
+ * -------------------------------------------------
+ */
+app.get('/bangsue-restaurants', cache(60 * 10), async (req, res) => {
   const lat = '13.8098348'
   const lng = '100.5212796'
   const { radius = '1500' } = req.query
