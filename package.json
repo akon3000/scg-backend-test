@@ -6,17 +6,13 @@
   "author": "ToNoey <vonmane001@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src",
-    "dev:line": "nodemon ./line-message",
     "start": "node ./src",
-    "start:line": "node ./line-message"
+    "dev": "nodemon ./src"
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "firebase-admin": "^8.6.1",
     "memory-cache": "^0.2.0"
   },
   "devDependencies": {
