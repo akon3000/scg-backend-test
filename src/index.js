@@ -1,11 +1,14 @@
 require('dotenv').config()
 
 const app = require('express')()
+const cors = require('cors')
 const axios = require('axios')
 const cache = require('./middleware/cache')
 const numberSeries = require('./utils/numberSeries')
 
 const { PORT, API_SEARCH, API_KEY } = process.env
+
+app.use(cors())
 
 app.get('/scg', cache(10), (req, res) => {
   return res.send('Hello SCG interview s')
