@@ -20,7 +20,13 @@ Go to scg-backen-test directory by terminal.
 cd scg-backen-test
 ```
 
-Run this project by command
+Install node module package by command.
+
+```
+npm install or yarn
+```
+
+Run this project by command.
 
 ```
 npm run start
