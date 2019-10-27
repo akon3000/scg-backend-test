@@ -20,12 +20,6 @@ Go to scg-backen-test directory by terminal.
 cd scg-backen-test
 ```
 
-Specific API_KEY in .env file (your google api key)
-
-```
-API_KEY={YOUR_API_KEY}
-```
-
 Run this project by command
 
 ```

@@ -42,7 +42,7 @@ app.get('/bangsue-restaurants', cache(60 * 10), async (req, res) => {
   const { radius = '1500' } = req.query
 
   try {
-    const response = await axios.get(encodeURI(`${API_SEARCH}?location=${lat},${lng}&radius=${radius}&type=restaurant&key=${API_KEY}`))
+    const response = await axios.get(encodeURI(`${API_SEARCH}?location=${lat},${lng}&radius=${radius}&type=restaurant&key=AIzaSyAvWbD0yw1zux_PQIIjyiyNCguRS0x-Cu0`))
     return res.send(response.data)
   } catch (err) {
     return res.status(500).send(`Error: some thing went worng`)
